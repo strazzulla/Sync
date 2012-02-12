@@ -1,0 +1,59 @@
+<h1>Sync with your partner</h1>
+<p id="notice"><%= notice %></p>
+<p> Hello! 
+	<% if current_user%>
+		<%= current_user.name %> (<%= current_user.email %>) 
+		<%end%>
+</p>
+<!-- <table>
+  <tr>
+    <th>Email</th>
+    <th>Name</th>
+    <th>Last name</th>
+    <th>Birthdate</th>
+    <th>Partner email</th>
+    <th>City</th>
+    <th>Country</th>
+    <th>Share location</th>
+    <th>Mood</th>
+    <th>Activity</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.email %></td>
+    <td><%= user.name %></td>
+    <td><%= user.last_name %></td>
+    <td><%= user.birthdate %></td>
+    <td><%= user.partner_email %></td>
+    <td><%= user.city %></td>
+    <td><%= user.country %></td>
+    <td><%= user.share_location %></td>
+    <td><%= user.mood %></td>
+    <td><%= user.activity %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table> -->
+<% if current_user%>
+	<p> Your Partner is <%= current_user.partner_email%> his name is
+		<% @users.each do |u| %>
+			<% if u.email == current_user.partner_email %>
+				<%= u.name %>
+				he is currently <strong><%=u.activity%></strong> 
+				and is feeling <strong><%= u.mood %></strong>
+			<% end %>
+		<% end %>
+	</p>
+<%end%>
+
+<br />
+
+<!--  <%= link_to 'New User', new_user_path %>
+ -->
+
