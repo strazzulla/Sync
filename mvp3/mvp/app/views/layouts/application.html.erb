@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mvp</title>
+  <title>Sync</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
- <div id="nav">
+ <div id="header">
         <% if current_user %>
         <%= link_to "Edit Profile", edit_user_path(current_user.id)%>
         <%= link_to "Logout", :logout%>
@@ -20,5 +20,8 @@
 
 <%= yield %>
 
+	<div id="footer">
+			<p>© Sync 2012</p>
+	</div>
 </body>
 </html>

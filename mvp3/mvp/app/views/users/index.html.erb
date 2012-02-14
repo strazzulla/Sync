@@ -1,59 +1,42 @@
-<h1>Sync with your partner</h1>
-<p id="notice"><%= notice %></p>
-<p> Hello! 
-	<% if current_user%>
-		<%= current_user.name %> (<%= current_user.email %>) 
-		<%end%>
-</p>
-<!-- <table>
-  <tr>
-    <th>Email</th>
-    <th>Name</th>
-    <th>Last name</th>
-    <th>Birthdate</th>
-    <th>Partner email</th>
-    <th>City</th>
-    <th>Country</th>
-    <th>Share location</th>
-    <th>Mood</th>
-    <th>Activity</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<!-- <h1>Sync with your partner</h1> -->
+<div id="left">
+	<%= image_tag("logo_transparent.png")%>
+</div>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.email %></td>
-    <td><%= user.name %></td>
-    <td><%= user.last_name %></td>
-    <td><%= user.birthdate %></td>
-    <td><%= user.partner_email %></td>
-    <td><%= user.city %></td>
-    <td><%= user.country %></td>
-    <td><%= user.share_location %></td>
-    <td><%= user.mood %></td>
-    <td><%= user.activity %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table> -->
-<% if current_user%>
-	<p> Your Partner is <%= current_user.partner_email%> his name is
-		<% @users.each do |u| %>
-			<% if u.email == current_user.partner_email %>
-				<%= u.name %>
-				he is currently <strong><%=u.activity%></strong> 
-				and is feeling <strong><%= u.mood %></strong>
-			<% end %>
-		<% end %>
+<div id="content">
+	<p id="notice"><%= notice %></p>
+	<p> 
+		<% if current_user%>
+			<%= current_user.name %> (<%= current_user.email %>) 
+			<% else %>
+			
+			<span id="contentArea">
+         <h2>Healthier Distance Relationships</h2> <br/><br/>
+         We are building tools for you to <b>seamlessly share</b> your life with each other in a 
+         <b>private space</b> with a <b>single click</b> and get great tips for fun 
+         getaways!<br/><br/>
+      </span>
+			<span id="mock_updates">
+				<%= image_tag("mock_updates.png")%>
+			</span>
+				
 	</p>
-<%end%>
+			<%end%>
+	<!-- After login, display partner's data -->
+	<% if current_user%>
+		<p> Your Partner is <%= current_user.partner_email%> his name is
+			<% @users.each do |u| %>
+				<% if u.email == current_user.partner_email %>
+					<%= u.name %>
+					he is currently <strong><%=u.activity%></strong> 
+					and is feeling <strong><%= u.mood %></strong>
+				<% end %>
+			<% end %>
+		</p>
+	<%end%>
 
 <br />
-
+</div>
 <!--  <%= link_to 'New User', new_user_path %>
  -->
 

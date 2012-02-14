@@ -11,3 +11,128 @@
  *= require_self
  *= require_tree .
 */
+/* Default CSS Document */
+
+/** BODY ELEMENTS **/
+/* Default CSS Document */
+
+															/** BODY ELEMENTS **/
+* {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+/*    color: #333;*/
+/*    background-color: #fff;*/
+    font-family:"Gill Sans", Calibri, Arial, sans-serif;
+/*    font-size: .75em;*/
+		
+		color:#777;
+    background:url('../images/page_bg.jpg') #e7e7e7;
+    font:20px "Gill Sans", Calibri, Arial, sans-serif;
+		}
+
+   h2{
+      font-family:"Gill Sans", Calibri, Arial, sans-serif;
+      font-size:175%;
+      font-weight:normal;
+      }
+
+
+
+
+															/** MAIN CONTAINERS **/
+div#container {
+
+	}
+	div#header {
+		text-align: left;
+
+		}
+		div#header-in {
+
+			}
+	div#content {
+
+		}
+		div#center {
+			margin: 0 0 0 180px;
+			}
+			div#center-in {
+
+				}
+		div.column {
+			width: 180px;
+			}
+			div#left {
+				float: left;
+				}
+				div.column-in {
+
+					}
+	div#footer {
+		clear: both;
+		text-align: center;
+		}
+		div#footer-in {
+
+			}
+
+
+
+
+
+
+															/** SUB CONTAINERS **/
+* { }
+
+
+
+
+
+
+															/** LISTS **/
+* { }
+
+
+
+
+
+
+															/** TYPOGRAPHY **/
+.x {
+	display: none;
+	}
+div#uhoh {
+	width: 400px;
+	margin: 100px auto;
+	padding: 20px 30px;
+	line-height: 1.5em;
+	text-align: left;
+	}
+	div.unauthorized-401, div.forbidden-403,
+	div.notfound-404, div.internalerror-500 {
+		color: #333;
+		background-color: #ffc;
+		border: 1px solid #ff0;
+		}
+	div.unauthorized-401 a, div.forbidden-403 a,
+	div.notfound-404 a, div.internalerror-500 a {
+		color: #00f;
+		background-color: #ffc;
+		}
+
+
+
+
+
+
+															/** FORMS **/
+* { }
+
+
+
+
+
+
+															/** END **/
