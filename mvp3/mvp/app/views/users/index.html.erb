@@ -7,6 +7,7 @@
 	<p id="notice"><%= notice %></p>
 	<p> 
 		<% if current_user%>
+			Welcome back! 
 			<%= current_user.name %> (<%= current_user.email %>) 
 			<% else %>
 			
@@ -24,6 +25,7 @@
 			<%end%>
 	<!-- After login, display partner's data -->
 	<% if current_user%>
+		<br/>
 		<p> Your Partner is <%= current_user.partner_email%> his name is
 			<% @users.each do |u| %>
 				<% if u.email == current_user.partner_email %>

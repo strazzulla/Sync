@@ -8,7 +8,9 @@
 </head>
 <body>
 
+
  <div id="header">
+				<%= link_to 'Home', users_path %> | 
         <% if current_user %>
         <%= link_to "Edit Profile", edit_user_path(current_user.id)%>
         <%= link_to "Logout", :logout%>
