@@ -38,6 +38,7 @@ div#top_content {
 		div#top_content div#app_screenshot div.price_badge{
 			width: 115px;
 			height: 115px;
+			/*--background: url('../images/price_badge.png') no-repeat top;--*/
 			background: url('../images/price_badge.png') no-repeat top;
 			float: right;
 			margin-top: -40px;
@@ -65,6 +66,8 @@ div#top_content {
 		div#top_content div#app_description p,
 		div#top_content div#app_description ul li{
 			font-size: 15px;
+            /*--font-size: 15px;--*/
+            font-size: 20px;
 			line-height: 25px;
 			letter-spacing: -0.03em;
 		}
@@ -79,6 +82,14 @@ div#top_content {
 				width: 251px;
 				height: 75px;
 				background: url('../images/app_store.gif') no-repeat top;
+				display: block;
+				text-indent: -999999px;
+				float: left;
+			}
+			div#top_content div#app_description div.actions a.sign_up {
+				width: 251px;
+				height: 75px;
+				background: url('../images/sign_up.png') no-repeat top;
 				display: block;
 				text-indent: -999999px;
 				float: left;
