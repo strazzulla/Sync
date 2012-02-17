@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>SlickApp Theme Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;SlickApp&rdquo; Theme Documentation by &ldquo;two2twelve&rdquo; v1.4</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;SlickApp&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 8/30/2010<br>
+					By: two2twelve<br>
+					Email: <a href="mailto:info@two2twelve.com">info@two2twelve.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/two2twelve">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+			<li><a href="#php">PHP Code Explanation</a></li>
+			<li><a href="#options">Theme Options</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a 1-page fixed layout with 5 jQuery-tabbed sub pages. Here is the general structure.</p>
+		
+		<p><img src="assets/images/htmlstructure.png" alt="HTML Structure" /></p>
+		
+		<p>The div with the id of <b>"top_content_wrap"</b> contains the main info for the app, including the screencast, logo, description and buy button.</p>
+		
+		<p>Each page is wrapped in a div that is commented and has the ID of the page name or section (ex: The homepage is contained in a div with the ID of <b>&ldquo;home&rdquo;</b>).</p>
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<pre>	#div_id a {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, try moving down to the bottom of the CSS file. This will ensure it overrides any other conflicting styles.</p>
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>There is one CSS stylesheet in this theme which contains all of the specific stylings for the theme and is located in the stylesheets/ folder.  </p> 
+
+		<p> The file is separated into sections using:</p>  
+
+<pre>
+	/*--------------------------------------------
+	Section Name
+	---------------------------------------------*/
+	
+	some code
+	
+	/*--------------------------------------------
+	Section Name
+	---------------------------------------------*/
+	
+	some code
+</pre>
+
+		<p>For every section in the HTML there is a corresponding CSS section. To update the CSS for any area of the theme, simply look for the containing div for that area, then look for the commented CSS section with that same name. </p>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports six Javascript files.</p>
+		
+		<ol>
+			<li><a href="http://jquery.org/">jQuery v1.4.2</a> - The main javascript framework library</li>
+			<li><a href="http://plugins.jquery.com/project/ScrollTo">jQuery ScollTo</a> - A library that provides scrolling functions</li>
+			<li><a href="http://flesler.blogspot.com/2008/02/jqueryserialscroll.html">jQuery SerialScroll</a> - A library that handles automated scrolling (for reviews)</li>
+			<li><a href="http://fancybox.net/">Fancybox 1.3.1</a> - A library that provides lightbox functionality for screenshots</li>
+			<li><a href="http://flowplayer.org/tools/index.html">jQuery Tools 1.2.4 </a>- A library that handles the tabbed navigation</li>
+			<li>SlickApp - Custom theme-specific javascript functions</li>
+		</ol>
+		
+		<p>More specifically, the SlickApp (slickapp.js) Javascript file adds the CSS3 property, border-radius, to a few areas of the theme in addition to activating the other aformentioned libraries. Lastly, towards the bottom the the slickapp.js file, is the code for the ajax-powered contact form.</p>
+		
+		<hr>
+		
+		<h3 id="psdFiles"><strong>D) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've included the fully sliced psd making it easy to find and update images within the theme.</p>
+		
+		<p>If you'd like to change any image within the theme, follow these simple steps:</p>
+		
+		<ol> 
+			<li>Locate the image you wish to edit in the images/ folder, for example, we'll take the logo file named "logo.jpg" as an example</li>
+			<li>Open the PSD file in Photoshop and make the necessary changes to the logo</li>
+			<li>Navigate to File > Save for Web &amp; Devices</li>
+			<li>Click on the logo slice to select it, then click Save</li>
+			<li>Towards the bottom of the file browser dialog, ensure the "slices" dropdown is selected on "Selected Slices"</li>
+			<li>Save image into the images/ directory, replacing the old one</li>
+		</ol>
+		
+		<p>Repeat these steps for any of the other images you wish to edit.</p>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following fonts and icons as listed.</p>
+		
+		<ul>
+			<li>Aller Font (logo) - <a href="http://www.fontsquirrel.com/fonts/Aller">http://www.fontsquirrel.com/fonts/Aller</a></li>
+			<li>Black Social Media Icons - <a href="http://www.iconfinder.com/search/?q=iconset%3Ablack-icon-social-media">http://www.iconfinder.com/search/?q=iconset%3Ablack-icon-social-media</a></li>
+		</ul>
+		
+		<hr>
+		
+		<h3 id="php"><strong>D) PHP Code Explanation</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme uses a simple PHP mailer script for the contact form.</p>
+		
+		<p>In the /scripts/ folder of the theme you should see a file called "send_mail.php". This file is used for submitting the contents of the contact form from the "Contact" page and emailing the contents to your specified email address. </p>
+
+		<p>To specify an email address for the form to submit to:</p>
+
+		<p>Open the "send_mail.php" file with any text editor. Find the following lines and replace these areas with your information.</p>
+
+	<pre>
+	$site_owners_email = 'you@yourdomain.com'; // Replace this with your own email address
+	$site_owners_name = 'Your Name'; // Replace with your name
+
+	$mail->Mailer = "smtp";
+	$mail->Host = "mail.yourdomain.com"; // Your mail server
+	$mail->Port = 25;
+
+	$mail->SMTPAuth = true; // Enable SMTP authentication
+	$mail->Username = "you@yourdomain.com"; // Your SMTP username
+	$mail->Password = "yourpassword"; // Your SMTP password
+	</pre>
+
+		<p>You can use your own mail server details here, or a mail server such as gmail.</p>
+		
+		
+		<hr>
+		
+		<h3 id="options"><strong>E) Theme Options</strong> - <a href="#toc">top</a></h3>
+		
+		<h4><strong>Adding Your App's Screencast</strong></h4>
+		
+		<p>This theme features a customizable screencast contained within the image of an iPhone. The screencast must be hosted at Vimeo (http://vimeo.com) and embedded using the special embed code provided with the theme.</p>
+
+		<p>You can easily update this to use your app's screencast by following these simple steps:</p>
+		
+		<ol>
+			<li>Upload your screencast to Vimeo. If you don't already have an account, you will need to signup (it's free).</li>
+			<li>Once your upload is complete, navigate to the video’s page and copy the video’s ID from the url as shown below:
+			<br/>
+			<img src="assets/images/vimeo_video_id.png" alt="Vimeo Video ID" />	
+			</li>
+			<li>Next, open the “index.html” file and find the Vimeo embed code located near the top of the theme
+				<br/>
+				<img src="assets/images/vimeo_id_code.png" alt="Vimeo Video ID" />	
+			</li>
+			<li>Replace the numbers following the “clip_id” in the embed code’s “value” and “src” with the id you copied from above.</li>
+		</ol>
+		
+		<p>Optionally, you can remove this entire line and uncomment the area for "static screenshot" if you'd prefer to use an image instead of a video.</p>
+		
+		<h4><strong>Updating Reviews</strong></h4>
+		
+		<p>To edit or add reviews to the homepage, locate the following block of code:</p>
+		
+		<p><img src="assets/images/reviews.png" alt="Reviews" />	</p>
+		
+		<p>To update an existing review, edit the contents within the div with the class of "review".</p>
+		
+		<p>To add a new review, copy the entire div with the class of "review" and paste it directly before the closing tag of the "reviews" div.</p>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Two2Twelve</strong><br/><a href="http://themes.two2twelve.com">http://themes.two2twelve.com</a></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
