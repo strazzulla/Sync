@@ -89,8 +89,9 @@ div#top_content {
 			font-size: 15px;
 			line-height: 25px;
 			letter-spacing: -0.03em;
+            padding-left: 10px;
 		}
-		div#top_content div#app_description ul { list-style: none; margin-top: 20px; }
+		div#top_content div#app_description ul { list-style: none; margin-top: 20px; margin-left: 20px; }
 			div#top_content div#app_description ul li {
 				background: url('../images/bullet.gif') no-repeat left;
 				padding-left: 25px;
