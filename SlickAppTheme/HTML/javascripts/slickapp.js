@@ -25,6 +25,7 @@ $(document).ready(function() {
 			'overlayShow'	:	false
 		});
 		$('input#send').click(function() {
+			console.log("button clicked");
         var name = $('input#name').val();
         var email = $('input#email').val();
 				var topic = $('input#topic').val();
@@ -36,6 +37,7 @@ $(document).ready(function() {
 
             success: function(results) {
                 $('p.validation').html(results);
+					//console.log();
             }
         }); // end ajax
     });

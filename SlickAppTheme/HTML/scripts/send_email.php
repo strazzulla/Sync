@@ -5,8 +5,8 @@
 	$topic = $_POST['topic'];
 	$message = $_POST['message'];
 	
-	$site_owners_email = 'you@youremail.com'; // Replace this with your own email address
-	$site_owners_name = 'Your Name'; // replace with your name
+	$site_owners_email = 'syncingwithyourpartner@gmail.com'; // Replace this with your own email address
+	$site_owners_name = 'Sync'; // replace with your name
 	
 	if (strlen($name) < 2) {
 		$error['name'] = "Please enter your name";	
@@ -34,12 +34,12 @@
 		// EDIT THIS!!
 		
 		$mail->Mailer = "smtp";
-		$mail->Host = "mail.yoursmtp.com";
-		$mail->Port = 25;
+		$mail->Host = "smtp.gmail.com"; //mail.google.com
+		$mail->Port = 465; // gmail SMTP port // used to be25 
 		
 		$mail->SMTPAuth = true; // turn on SMTP authentication
-		$mail->Username = "you@youremail.com"; // SMTP username
-		$mail->Password = "yourpassword"; // SMTP password
+		$mail->Username = "syncingwithyourpartner@gmail.com"; // SMTP username
+		$mail->Password = "syncitup"; // SMTP password
 
 		$mail->Send();
 		
