@@ -35,6 +35,25 @@ div#top_content {
 		background: url('../images/phone_2.jpg') no-repeat top left;
 
 	}
+	
+	/* sign up */
+	div#top_content_signup div#logo_top {
+		/*float: right; */
+		padding-top :25px;
+		margin: auto;
+		width: 180px;
+		height: 138px;
+
+	}
+	.stretch {
+	    width:120%;
+	    height:100%;
+	}
+	div#bottom_content div#Title {
+		float:left;
+		padding-left:0px;
+		font-size:36px;
+	}
 		div#top_content div#app_screenshot div.price_badge{
 			width: 115px;
 			height: 115px;
