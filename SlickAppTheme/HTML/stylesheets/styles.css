@@ -13,7 +13,7 @@ body {
 	color: #666666;
 	background: #ebebeb;
 }
-.page { width: 950px; margin: 0 auto; }
+.page { width: 910px; margin: 0 auto; }
 div#top_bar {
 	background: #dddddd;
 	height: 7px;
@@ -30,9 +30,9 @@ div#top_content {
 }
 	div#top_content div#app_screenshot {
 		float: left;
-		width: 305px;
+		width: 380px;
 		height: 508px;
-		background: url('../images/phone.jpg') no-repeat top left;
+		background: url('../images/phone_2.jpg') no-repeat top left;
 
 	}
 		div#top_content div#app_screenshot div.price_badge{
@@ -50,7 +50,7 @@ div#top_content {
 		}
 	div#top_content div#app_description {
 		float: right;
-		width: 590px;
+		width: 520px;
 		margin-top: 15px;
 	}
 		div#top_content div#app_description div.header h1,
@@ -74,7 +74,7 @@ div#top_content {
 				padding-left: 25px;
 				margin-bottom: 6px;
 			}
-		div#top_content div#app_description div.actions { margin-top: 50px; }
+		div#top_content div#app_description div.actions { margin-top: 30px; }
 			div#top_content div#app_description div.actions a.app_store {
 				width: 260px;
 				height: 75px;
@@ -85,7 +85,7 @@ div#top_content {
 			}
 			div#top_content div#app_description div.actions p {
 				font-size: 12px;
-				width: 260px;
+				width: 220px;
 				float: left;
 				margin-left: 30px;
 				line-height: 19px;
@@ -449,7 +449,7 @@ div#footer {
 Typography
 ---------------------------------------------*/
 h1 {
-	width: 400px;
+	width: 380px;
 	height: 135px;
 	background: url('../images/logo.jpg') no-repeat top;
 	text-indent: -999999px;
