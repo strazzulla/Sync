@@ -1,0 +1,44 @@
+<!-- <h1>Sync with your partner</h1> -->
+<div id="left">
+	<%= image_tag("logo_transparent.png")%>
+</div>
+
+<div id="content">
+	<p id="notice"><%= notice %></p>
+	<p> 
+		<% if current_user%>
+			Welcome back! 
+			<%= current_user.name %> (<%= current_user.email %>) 
+			<% else %>
+			
+			<span id="contentArea">
+         <h2>Healthier Distance Relationships</h2> <br/><br/>
+         We are building tools for you to <b>seamlessly share</b> your life with each other in a 
+         <b>private space</b> with a <b>single click</b> and get great tips for fun 
+         getaways!<br/><br/>
+      </span>
+			<span id="mock_updates">
+				<%= image_tag("mock_updates.png")%>
+			</span>
+				
+	</p>
+			<%end%>
+	<!-- After login, display partner's data -->
+	<% if current_user%>
+		<br/>
+		<p> Your Partner is <%= current_user.partner_email%> his name is
+			<% @users.each do |u| %>
+				<% if u.email == current_user.partner_email %>
+					<%= u.name %>
+					he is currently <strong><%=u.activity%></strong> 
+					and is feeling <strong><%= u.mood %></strong>
+				<% end %>
+			<% end %>
+		</p>
+	<%end%>
+
+<br />
+</div>
+<!--  <%= link_to 'New User', new_user_path %>
+ -->
+

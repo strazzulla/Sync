@@ -1,0 +1,701 @@
+/* 
+SlickApp - CSS Stylesheet
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+*/
+* { padding: 0; margin: 0; }
+/*--------------------------------------------
+Global Elements
+---------------------------------------------*/
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #666666;
+	background: #ebebeb;
+}
+.page { width: 910px; margin: 0 auto; }
+
+
+/*--------------------------------------------
+Header
+--------------------------------------------*/
+div#top_bar {
+	height: 7px;
+}
+#top_bar	{
+	border-bottom: 1px solid #dfe2e1;
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 20px
+}
+
+#user_auth	{
+	position: absolute;
+	top: 0px;
+	right: 0px
+}
+
+.small.button {
+	padding: 7px 10px 8px 10px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+a.button {
+	display: inline-block;
+	font-family: "HelveticaNeue-Bold", "HelveticaNeue", Helvetica, Arial, Sans-serif;
+	font-weight: bold;
+	color: white;
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	text-decoration: none;
+	white-space: nowrap;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+#user_auth .small.button	{
+	position: absolute;
+	padding: 0px;
+	text-align: center;
+	padding: 7px 0px 8px;
+	top: 8px
+}
+
+#user_auth .small.login.button	{
+	right: 110px;
+	width: 70px;
+	background-color: #585858;
+}
+
+.black.button {
+	background: -moz-linear-gradient(center bottom, #585858 22%, gray 81%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.22, #585858), color-stop(0.81, gray));
+	background-color: gray;
+	background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.22, #585858), color-stop(0.81, gray));
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background: -moz-linear-gradient(center bottom, #585858 22%, gray 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#808080, endColorStr=#585858);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#808080, endColorstr=#585858)";
+	text-shadow: 0px -1px #585858;
+}
+
+.black.button:hover {
+	background: #585858;
+}
+
+#user_auth .small.signup.button	{
+	right: 0px;
+	width: 80px;
+	text-align: center
+}
+
+.red.button {
+	background: -moz-linear-gradient(center bottom, #F02C14 22%, #F01 81%);
+	background: -webkit-gradient(linear,left bottom, left top, color-stop(0.22, #F02C14), color-stop(0.81, #F01));
+	background-color: #F01;
+	background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.22, #F02C14), color-stop(0.81, #F01));
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background: -moz-linear-gradient(center bottom, #F02C14 22%, #F01 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#FF0011, endColorStr=#F02C14);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffaa44, endColorstr=#F02C14)";
+	text-shadow: 0px -1px #C98B20;
+}
+
+.red.button:hover {
+	background: #F02C14;
+}
+
+
+.orange.button {
+	background: -moz-linear-gradient(center bottom, #FF9009 22%, #FA4 81%);
+	background: -webkit-gradient(linear,left bottom, left top, color-stop(0.22, #FF9009), color-stop(0.81, #FA4));
+	background-color: #FA4;
+	background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.22, #FF9009), color-stop(0.81, #FA4));
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background: -moz-linear-gradient(center bottom, #FF9009 22%, #FA4 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ffaa44, endColorStr=#ff9009);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffaa44, endColorstr=#ff9009)";
+	text-shadow: 0px -1px #C98B20;
+}
+
+.orange.button:hover {
+	background: #FF9009;
+}
+
+#user_auth .divider	{
+	width: 1px;
+	height: 30px;
+	position: absolute;
+	right: 95px;
+	background: #E2E2E2;
+	top: 8px
+}
+
+#user_auth #credentials	{
+	position: absolute;
+	right: 187px;
+	background: transparent;
+	width: 330px;
+	height: 62px;
+}
+
+#user_auth #credentials .col	{
+	width: 161px;
+	float: left;
+	height: 62px;
+}
+
+#user_auth input[type=text], #user_auth input[type=password] {
+	display: block;
+	padding: 4px 6px;
+	font-size: 11px;
+	width: 137px;
+	margin: 10px 0px 3px 7px;
+	outline: none 0;
+}
+
+#user_auth .hide	{
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	display: inline-block
+}
+
+#user_auth input[type=text]:focus, #user_auth input[type=password]:focus	{
+	border: 2px solid #007934
+}
+
+#user_auth input[type=checkbox] {
+	margin-left: 7px;
+	outline: none 0
+}
+
+#user_auth label	{
+	font-size: 10px;
+}
+
+#user_auth .retrieve_password	{
+	margin-left: 8px;
+	font-size: 10px
+}
+
+/*--------------------------------------------
+Logo
+--------------------------------------------*/
+a#logo-link {
+	padding: 0;
+	float: left;
+	display: block;
+	width: 400px;
+	height: 135px;
+  background:url('../images/logo.jpg') no-repeat top;
+/*  background:url('../images/page_bg.jpg') #e7e7e7;*/
+  
+	margin-bottom: 15px;
+}
+
+/*--------------------------------------------
+App Screenshot & Desciption
+---------------------------------------------*/
+div#top_content_wrap {
+	background: #fff;
+}
+div#top_content { 
+	background: url('../images/light_shadow.gif') no-repeat bottom;
+	padding-top: 55px; 
+}
+	div#top_content div#app_screenshot {
+		float: left;
+		width: 380px;
+		height: 448px;
+		background: url('../images/phone_2.jpg') no-repeat top left;
+
+	}
+	
+	/* sign up */
+	div#top_content_signup div#logo_top {
+		/*float: right; */
+		padding-top :25px;
+		margin: auto;
+		width: 180px;
+		height: 138px;
+
+	}
+	.stretch {
+	    width:120%;
+	    height:100%;
+	}
+	div#bottom_content div#Title {
+		float:left;
+		padding-left:0px;
+		font-size:36px;
+	}
+		div#top_content div#app_screenshot div.price_badge{
+			width: 115px;
+			height: 115px;
+			background: url('../images/price_badge.png') no-repeat top;
+			float: right;
+			margin-top: -40px;
+			padding-right: 40px;
+		}
+        
+        
+		div#top_content div#app_screenshot .screencast {
+			float: left;
+			padding-top: 12px;
+			padding-left: 24px;
+		}
+	div#top_content div#app_description {
+		float: right;
+		width: 520px;
+		margin-top: 15px;
+        margin-left: 10px;
+	}
+		div#top_content div#app_description div.header h1,
+		div#top_content div#app_description div.header div.version{ float: left; }
+			div#top_content div#app_description div.header div.version {
+				padding: 4px 8px 4px 8px;
+				background: #E8D48D	;
+				color: #ffffff;
+				margin-left: 30px;
+				margin-top: 20px;
+			}
+		div#top_content div#app_description p,
+		div#top_content div#app_description ul li{
+			font-size: 15px;
+			line-height: 25px;
+			letter-spacing: -0.03em;
+            padding-left: 10px;
+		}
+		div#top_content div#app_description ul { list-style: none; margin-top: 20px; margin-left: 20px; }
+			div#top_content div#app_description ul li {
+				background: url('../images/bullet.gif') no-repeat left;
+				padding-left: 25px;
+				margin-bottom: 6px;
+			}
+		div#top_content div#app_description div.actions { margin-top: 30px; }
+			div#top_content div#app_description div.actions a.app_store {
+				width: 260px;
+				height: 75px;
+				background: url('../images/app_store.gif') no-repeat top;
+				display: block;
+				text-indent: -999999px;
+				float: left;
+			}
+			div#top_content div#app_description div.actions p {
+				font-size: 12px;
+				width: 220px;
+				float: left;
+				margin-left: 30px;
+				line-height: 19px;
+			}
+			div#top_content div#app_description div.actions p b { 
+				display: block; 
+				color: #444; 
+			}
+			div#page_seperator {
+				height: 2px;
+				width: 100%;
+				background: url('../images/page_seperator.gif') repeat-x top;
+			}			
+			div#bottom_content {
+				background: url('../images/dark_shadow.gif') no-repeat top;
+			}
+/*--------------------------------------------
+Nav
+---------------------------------------------*/
+div#nav {
+	margin-top: -1px;
+		background: url('../images/horizontal_seperator.gif') repeat-x bottom;
+}
+div#nav ul{
+	list-style: none;
+	height: 40px;
+	width: 620px;
+	margin: 0 auto;
+}
+	div#nav ul li {
+		float: left;
+		margin-right: 15px;
+	}
+		div#nav ul li a {
+			padding: 12px 25px 12px 25px;
+			display: block;
+			color: #666;
+			font-weight: bold;
+			text-decoration: none;
+		}
+			div#nav ul li a:hover { background: #ddd; }
+		div#nav ul li a.current { background: #ddd; color: #000; }
+/*--------------------------------------------
+Pages
+---------------------------------------------*/
+div.pane {
+	padding: 45px 0px 25px 0px;
+}
+/*--------------------------------------------
+Home
+---------------------------------------------*/
+div#features {
+	background: url('../images/horizontal_seperator.gif') repeat-x bottom;
+	clear:both;
+	padding-bottom: 30px;
+}
+	div#features div.feature {
+		width: 283px;
+		float: left;
+		margin-right: 25px;
+		position: relative;
+	}
+		div#features div.feature div.new {
+			width: 106px;
+			height: 95px;
+			background: url('../images/new_feature.png') no-repeat top;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 2;
+		}
+		div#features div.feature div.content {
+			background: #d3d3d3 url('../images/feature_box-top.gif') no-repeat top;
+			padding: 20px 20px 10px 20px;
+		}
+			div#features div.feature div.content div.screenshot { position: relative; }
+				div#features div.feature div.content div.screenshot a {
+					width: 37px;
+					height: 26px;
+					background: url('../images/enlarge.png') no-repeat top;
+					text-indent: -999999px;
+					display: block;
+					position: absolute;
+					bottom: 0px;
+					left: 2px;
+				}
+			div#features div.feature div.content p{
+				color: #696969;
+				letter-spacing: -0.03em;
+				font-size: 13px;
+				padding-top: 15px;
+				padding-left: 5px;
+			}
+		div#features div.feature div.bottom {
+			height: 8px;
+			background: url('../images/feature_box-bottom.gif') no-repeat top;
+		}
+	div#features div.last { margin-right: 0px; }
+div#reviews_faqs { padding-top: 35px; }
+div#reviews {
+	float: left;
+	width: 275px;
+	height: 280px;
+	padding-right: 60px;
+	background: url('../images/vertical_seperator.gif') repeat-y right;
+	overflow: hidden;
+	position: relative;
+}
+	div#reviews div.review {
+		background: url('../images/quotes.gif') no-repeat top left;
+		padding-left: 30px;
+		margin-bottom: 35px;
+		position: relative;
+	}
+		div#reviews div.review p{
+			font-style: italic;
+			font-size: 13px;
+			letter-spacing: 0.02em;
+			line-height: 22px;
+			padding-top: 2px;
+			margin-bottom: 20px;
+		}
+		div#reviews div.review span{
+			color: #519fa0;
+			text-align: right;
+			display: block;
+		}
+			div#reviews div.review span a{
+				display: block;
+				font-size: 11px;
+				text-decoration: none;
+				color: #999;
+				margin-top: 3px;
+			}	
+				div#reviews div.review span a:hover{ color: #555; }
+div#faqs { float: right; width: 540px; }
+	div#faqs div.left_column {
+		float: left;
+		width: 240px;
+	}
+	div#faqs div.right_column {
+		float: right;
+		width: 240px;
+	}
+	div#faqs div.faq {
+		margin-bottom: 40px;
+	}
+		div#faqs div.faq b {
+			color: #252525;
+			font-weight: bold;
+			margin-bottom: 10px;
+			display: block;
+		}
+		div#faqs div.faq p {
+			color: #777;
+			font-size: 12px;
+			line-height: 20px;
+		}
+/*--------------------------------------------
+About
+---------------------------------------------*/
+div#about {}
+	div#about div.left {
+		float: left;
+		width: 570px;
+		padding-right: 40px;
+	}
+		div#about div.left p{ line-height: 20px; margin-bottom: 25px; }
+	div#about div.right {
+		background:  #DDDDDD;
+		float: right;
+		padding: 15px 25px 5px 25px;
+		width: 220px;
+	}
+		div#about div.right h2 { margin-bottom: 15px; }
+		div#about div.right ul{ list-style: none; }
+			div#about div.right ul li {
+				margin-bottom: 12px;
+				padding-bottom: 12px;
+				clear: both;
+				border-bottom: 1px solid #ccc;
+			}
+			div#about div.right ul li img{ float: left; margin-right: 15px; }
+			div#about div.right ul li h3{
+				font-size: 13px;
+				margin-bottom: 5px;
+				color: #555;
+			}
+			div#about div.right ul li span {
+				font-size: 12px;
+				display: block;
+				margin-bottom: 4px;
+				font-style: italic;
+				color: #999;
+			}
+			div#about div.right ul li a { font-size: 11px; color: #50aeae; text-decoration: none; }
+				div#about div.right ul li a:hover { color: #333; } 
+		div#about div.right ul li.last { border: none; }
+/*--------------------------------------------
+Screenshots
+---------------------------------------------*/
+div#screenshots {}
+	div#screenshots ul { list-style: none; }
+		div#screenshots li {
+			float: left;
+			margin-right: 25px;
+		}
+			div#screenshots li img {
+				width: 200px;
+			}
+/*--------------------------------------------
+Release Notes
+---------------------------------------------*/
+div#release_notes { }
+	div#release_notes div.release {
+		margin-bottom: 40px;
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 30px;
+	}
+		div#release_notes .left {
+			float: left;
+			width: 200px;
+		}
+		div#release_notes div.right {
+			float: right;
+			width: 700px;
+		}
+		div#release_notes div.release span.date {
+			display: block;
+			margin-bottom: 15px;
+			font-size: 12px;
+		}
+		div#release_notes div.release ul {
+			padding-left: 35px;
+			line-height: 22px;
+		}
+	div#release_notes div.last { margin: 0; padding: 0; border: none; }
+/*--------------------------------------------
+Contact
+---------------------------------------------*/
+div#contact_form {}
+	div#contact_form div.left {
+		float: left;
+		width: 540px;
+		padding-right: 40px;
+		background: url('../images/vertical_seperator.gif') repeat-y top right;
+	}
+		div#contact_form form { }
+			div#contact_form div.text_fields {
+				float: left;
+			}
+			div#contact_form form p {
+				clear:both;
+				margin-bottom: 23px;
+			}
+				div#contact_form p label {
+					background: #ddd;
+					display: block;
+					padding: 8px 0px 8px 10px;
+					width: 70px;
+					text-align: left;
+					font-size: 11px;
+					font-weight: bold;
+					color: #363636;
+					text-transform: uppercase;
+					float: left;
+				}
+				div#contact_form .text_input {
+					background: #fff url('../images/text_field.gif') repeat-x top;
+					border: 1px solid #c0c0c0;
+					padding: 8px 8px 7px 8px;
+					font-size: 11px;
+					color: #666;
+					margin-left: -2px;
+					width: 240px;
+				}
+				div#contact_form select.text_input { padding: 6px 6px 4px 6px; width: 257px; height: 31px; }
+						div#contact_form #message { 
+							width: 400px; 
+							height: 105px; 
+							font-size: 12px;
+							color: #666;
+						}
+				div#contact_form p.validation {
+					font-size: 11px;
+					text-transform: uppercase;
+					padding-top: 4px;
+					margin: 0;
+					float: left;
+				}
+				div#contact_form .send {
+					float: left;
+					margin-left: 275px;
+				}
+	div#contact_form div.right {
+		width: 275px;
+		float: right;
+	}
+		div#contact_form div.right b{
+			font-weight: bold;
+			color: #252525;
+			display: block;
+			margin-bottom: 10px;
+		}
+		div#contact_form div.right p { 
+			font-size: 13px; 
+			line-height: 22px; 
+			letter-spacing: -0.02em; 
+			margin-bottom: 10px;
+		}
+		div#contact_form div.right a.email {
+			display: block;
+			padding-left: 28px;
+			background: url('../images/mail_icon.gif') no-repeat left;
+			color: #50aeae;
+			text-decoration: none;
+		}
+			div#contact_form div.right a.email:hover { color: #333; }		
+/*--------------------------------------------
+Footer
+---------------------------------------------*/
+div#footer {
+ 	padding-top: 10px;
+	padding-bottom: 30px;
+}
+	div#footer div.top {
+		height: 30px;
+		background: url('../images/horizontal_seperator.gif') repeat-x bottom;
+	}
+		div#footer div.top img {
+			float: left;
+		}
+		div#footer div.top ul{ list-style: none; float: right; margin-top: -10px; }
+			div#footer div.top ul li {
+				background: url('../images/vertical_seperator.gif') repeat-y top left;
+				float: left;
+				padding: 8px 15px 8px 15px;
+			}
+				div#footer div.top ul li a {
+					width: 22px;
+					height: 22px;
+					background: url('../images/social_icons.gif') no-repeat;
+					text-indent: -99999px;
+					display: block;
+				}
+					div#footer div.top ul li.twitter a { background-position: 0px 0px; }
+						div#footer div.top ul li.twitter a:hover { background-position: 0px -22px; }
+					div#footer div.top ul li.facebook a { background-position: -22px 0px; }
+						div#footer div.top ul li.facebook a:hover { background-position: -22px -22px; }
+					div#footer div.top ul li.rss a { background-position: -44px 0px; }
+						div#footer div.top ul li.rss a:hover {  background-position: -44px -22px; }
+	div#footer div.bottom {
+		padding-top: 10px;
+	}
+		div#footer div.bottom a{
+			float: left;
+		}
+		div#footer div.bottom p{
+			float: right;
+			font-size: 11px;
+			padding-top: 5px
+		}
+/*--------------------------------------------
+Typography
+---------------------------------------------*/
+h1 {
+	width: 380px;
+	height: 135px;
+	background: url('../images/logo.jpg') no-repeat top;
+	text-indent: -999999px;
+	margin-bottom: 15px;
+}		
+h2 {
+	color: #222;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+h3 {
+	color: #222;
+	font-size: 16px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+span.red { color: #e20a10; }
+/*--------------------------------------------
+Utility
+---------------------------------------------*/
+.clear { clear:both; }
+img { border: none; }
+a { outline: none; }

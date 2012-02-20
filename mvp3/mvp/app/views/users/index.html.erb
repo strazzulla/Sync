@@ -1,44 +1,283 @@
-<!-- <h1>Sync with your partner</h1> -->
-<div id="left">
-	<%= image_tag("logo_transparent.png")%>
-</div>
-
-<div id="content">
-	<p id="notice"><%= notice %></p>
-	<p> 
-		<% if current_user%>
-			Welcome back! 
-			<%= current_user.name %> (<%= current_user.email %>) 
-			<% else %>
-			
-			<span id="contentArea">
-         <h2>Healthier Distance Relationships</h2> <br/><br/>
-         We are building tools for you to <b>seamlessly share</b> your life with each other in a 
-         <b>private space</b> with a <b>single click</b> and get great tips for fun 
-         getaways!<br/><br/>
-      </span>
-			<span id="mock_updates">
-				<%= image_tag("mock_updates.png")%>
-			</span>
+<div id="top_content_wrap"> <!-- Start App Description -->
+	<div id="top_content" class="page">
+		
+          <div id="app_screenshot"> <!-- Start App Screencast -->
+			<div class="price_badge"></div>
+              
+              <!-- BEGIN LIKE Button -->
+              <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/Synclives"
+      scrolling="no" frameborder="0"
+      style="border:none; padding-top:300px; padding-left:10px; width:380px; height:70px"></iframe>
+   <!-- Like BUTTON END -->
+  
+           <!---ALTERNATE LIKE:  <div class="fb-like" data-href="http://www.facebook.com/synclives" data-send="false" padding-top="300" padding-left="10" data-width="380" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div> -->
+                                      
+              
+          <!--	<div class="screencast"> 			
+                  <iframe src="http://player.vimeo.com/video/14500965?title=0&amp;byline=0&amp;portrait=0" width="195" height="291" frameborder="0"></iframe> 
+                  -->
+                	<!-- Uncomment to use a static screenshot 
+					<img src="images/app_screenshot.jpg" alt="" /> -->
+				 <!-- </div> -->
+              
+		</div> <!-- End App Screencast -->
+	
+		<div id="app_description"> <!-- Start App Description -->
+			<div class="header">
+				<a href="index.html"><h1>Sync</h1></a>
+				<div class="version">NEW RELEASE</div>
+				<div class="clear"></div>
+			</div>
+			<p>We are building tools for you to <b>seamlessly share</b> your life with each other in a 
+             <b>private space</b> with a <b>single click</b> and get great tips for fun 
+             getaways!</p>				
+			<ul>
+				<li>Share easily, directly and privately. Share MORE</li>
+				<li>Store your life together in one beautiful space</li>
+		
+			</ul>
+		    
+		    
+			<div class="actions">
+				<a href="signup.html" class="app_store">Beta available on our Website</a>
+				<p>
+					<b>Requirements:</b>
+					Viewable over iPhone/iPod browser.
+                      WiFi, Edge, or 3G network connection required.
+				</p>
+				<div class="clear"></div>
 				
-	</p>
-			<%end%>
-	<!-- After login, display partner's data -->
-	<% if current_user%>
-		<br/>
-		<p> Your Partner is <%= current_user.partner_email%> his name is
-			<% @users.each do |u| %>
-				<% if u.email == current_user.partner_email %>
-					<%= u.name %>
-					he is currently <strong><%=u.activity%></strong> 
-					and is feeling <strong><%= u.mood %></strong>
-				<% end %>
-			<% end %>
-		</p>
-	<%end%>
-
-<br />
+			</div>
+		</div> <!-- End App Description -->
+		<div class="clear"></div>
+	</div>
 </div>
-<!--  <%= link_to 'New User', new_user_path %>
- -->
 
+<div id="page_seperator"></div>
+
+<div id="nav"> <!-- Start Page Navigation -->
+	<ul class="tabs page">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#screenshots">Screenshots</a></li>
+		<li><a href="#release_notes">Privacy Policy</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+	<div class="clear"></div>
+</div> <!-- End Page Navigation -->
+ 
+<div id="bottom_content" class="page panes">
+	
+	<div id="home" class="pane"> <!-- Start Homepage -->
+		
+		<div id="features"> <!-- Start Features -->
+			<div class="feature">
+				<div class="new"></div>
+				<div class="content">
+					<div class="screenshot">
+						<img src="images/feature_1.jpg" alt="" />
+						<a href="images/feature_1.jpg" class="screenshots" rel="group">Enlarge</a>
+					</div>
+					<p>Share your location whenever you wish with a single click! See where your love is!</p>
+				</div>				
+				<div class="bottom"></div>
+			</div>
+			<div class="feature">
+				<div class="content">
+					<div class="screenshot">
+						<img src="images/feature_2.jpg" alt="" />
+						<a href="images/feature_2.jpg" class="screenshots" rel="group">Enlarge</a>
+					</div>
+					<p>Status buttons let you be considerate! Let her know when you are away and busy!</p>
+				</div>				
+				<div class="bottom"></div>
+			</div>
+			<div class="feature last">
+				<div class="content">
+					<div class="screenshot">
+						<img src="images/feature_3.jpg" alt="" />
+						<a href="images/feature_3.jpg" class="screenshots" rel="group">Enlarge</a>
+					</div>
+					<p>Couples need their special emoticons! A special app for him and her to share them: smooches and winks by Sync.</p>
+				</div>				
+				<div class="bottom"></div>
+			</div>
+			<div class="clear"></div>
+		</div> <!-- End Features -->
+	
+		<div id="reviews_faqs">
+		
+			<div id="reviews"> <!-- Start Reviews -->
+				<div class="review">
+					<p>Can't wait for the iPhone version. This is awesome even on the web!</p>
+					<span>- Esther</span>
+				</div>
+				<div class="review">
+					<p>I love how easy it is to use. No more struggling with texting in a meeting.</p>
+					<span>- Billie </span>
+				</div>
+				<div class="review">
+					<p>Now I always know when Aaron's busy.. no more waiting for replies to my messages.</p>
+					<span>- Katie </span>
+				</div>
+				<div class="review">
+					<p>Finally.. there is an app for that!</p>
+					<span>- Sharon</span>
+				</div>
+				<!-- Add more reviews here -->
+			</div> <!-- End Reviews -->
+		
+			<div id="faqs"> <!-- Start FAQs -->
+				<div class="left_column">
+					<div class="faq">
+						<b>Who is this for?</b>
+						<p>Sync is for couples. Particularly those who are in long distance relationships and need an easy way to share their busy lives with each other.</p>
+					</div>
+				
+					<div class="faq">
+						<b>Is my data safe?</b>
+						<p>Unlike social networks, we respect your privacy and right to own your pictures and conversations. We claim no rights to any of them.</p>
+					</div>
+				</div>
+			
+				<div class="right_column">
+					<div class="faq">
+						<b>What if I need more features?</b>
+						<p>We are working on it! Meanwhile, tell us what you would like.</p>
+					</div>
+				
+					<div class="faq">
+						<b>When's the iPhone app coming?</b>
+						<p>Soon. Meanwhile, we would love to have your feedback on our web app!</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div> <!-- End FAQs -->
+		
+			<div class="clear"></div>
+		
+		</div>
+	</div> <!-- End Homepage -->
+	
+	<div id="about" class="pane"> <!-- Start About Page -->
+		<div class="left">
+			<h2>We are Sync</h2>
+			<p>We are a group of Stanford students dedicated to the mission of building healthier relationships. The fast-paced world around us and proliferating social networks often make us neglect the one most important relationship in our lives - our partner. The eye-witness to your life needs help keeping in sync with your world, especially when you are traveling or living apart.</p>
+			
+			<p>With this noble purpose, we are building Sync. This is our alpha version and we hope to use our research to bring better, more useful apps to you that will make  apositive difference in your life and that of your loved one.</p>
+		</div>
+
+		<div class="right">
+			<h2>The Team</h2>
+			<!-- Maybe a team picture or some nice image from Coupa?--->
+              <!--- 
+              <ul>
+				<li>
+					<img src="images/team_member.jpg" alt="" width="60" />
+					<h3>Your Name</h3>
+					<span>Designer</span>
+					<a href="">Twitter</a> / <a href="">Website</a>
+				</li>
+                  </ul>
+                     --->                                
+                                                          					<!-- Add more team members here -->
+			
+		</div>
+		<div class="clear"></div>
+	</div> <!-- End About Page -->
+	
+	<div id="screenshots" class="pane"> <!-- Start Screenshots Page -->
+		<!--<h2>App Screenshot</h2> -->
+          <img src="images/coming_soon.png" alt=""/>
+		  <div class="clear"></div>
+	</div> 
+     
+
+          <!---
+          <ul>
+			<li><a href="images/screenshot_1.jpg" class="screenshots" rel="group_1"><img src="images/screenshot_1.jpg" alt="" /></a></li>
+			<li><a href="images/screenshot_2.jpg" class="screenshots" rel="group_1"><img src="images/screenshot_2.jpg" alt="" /></a></li>
+			<li><a href="images/screenshot_3.jpg" class="screenshots" rel="group_1"><img src="images/screenshot_3.jpg" alt="" /></a></li>
+			<li><a href="images/screenshot_4.jpg" class="screenshots" rel="group_1"><img src="images/screenshot_4.jpg" alt="" /></a></li>
+		</ul> -->
+          
+		        <!-- End Screenshots Page -->
+	 
+	<div id="release_notes" class="pane"> <!-- Start Release Notes Page -->
+		<div class="release"> <!-- Start Release -->
+			<div class="left">
+				<h3>Privacy Policy</h3>
+				<span class="date">Policy released 02/01/12</span>
+			</div>
+			<div class="right">
+				<ul>
+					<li>All your data is private. We do not own it and have no rights to it.</li>
+					<li>Unlike social networks, we take your privacy and your relationships seriously. They are paramount to us. Access to your data will be fully controlled at each step by you.</li>
+					
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div> 
+      </div>
+            <!-- End Release --> <!-- Start Release Notes Page -->
+		
+          <!--
+          <div class="release">
+			<div class="left">
+				<h3>SlickApp 1.2</h3>
+				<span class="date">Released on 9/15/10</span>
+			</div>
+			<div class="right"></div>
+			<div class="clear"></div>
+		</div>
+          
+		<div class="release last">
+			<div class="left">
+				<h3>SlickApp 1.1</h3>
+				<span class="date">Released on 08/20/10</span>
+			</div>
+			<div class="right">
+			</div>
+			<div class="clear"></div>
+		</div> 
+              --->
+          
+          <div id="contact" class="pane"> <!-- Start Contact Page -->
+		<div id="contact_form">
+			<div class="left">
+				<form action="javascript:;" method="post"> <!-- Start Contact Form -->
+					<p>
+						<label>Name</label>
+						<input type="text" id="name" name="name" class="text_input" />
+					</p>
+					<p>
+						<label>Email</label>
+						<input type="text" id="email" name="email" class="text_input" />
+					</p>
+					<p>
+						<label>Subject</label>
+						<select id="topic" name="topic" class="text_input">
+							<option value="General Support">General Support</option>
+							<option value="Bug Report">Bug Report</option>
+						</select>
+					</p>
+					<p>
+						<label style="height: 105px">Message</label>
+						<textarea id="message" name="message" class="text_input" rows="" cols=""></textarea>
+					</p>
+					<p class="validation">All Fields Are Required</p>
+					<input type="image" src="images/send.gif" class="send" id="send" />
+				</form> <!-- End Contact Form -->
+			</div>
+			
+			<div class="right">
+				<b>Get In Touch</b>
+				<p>Please reach out to us, we would love to hear about your inputs, pain points and experiences.</p>
+				<a href="" class="email">founders@syncourlives.com</a> <!-- Add your email here -->
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	</div> <!-- End Contact Page -->
+	
+</div>

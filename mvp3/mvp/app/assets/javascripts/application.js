@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//=require jquery
+//=require jquery.scroll
+//=require jquery.serialScroll
+//=require jquery.tools
+//=require slickapp
+//=require jquery.fancybox-1.3.1
+//=require jquery.fancybox-1.3.1.pack
+//=require jquery.easing-1.3.pack
+//=require jquery.mousewheel-3.0.2.pack

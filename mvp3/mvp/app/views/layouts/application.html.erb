@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <title>Sync</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -8,8 +8,32 @@
 </head>
 <body>
 
+	<div id="top_bar">
+	
+		<!-- Login/Sign up -->
+		<div id="user_auth">
+			<%= link_to "Login", { :controller => 'user_sessions', :action => 'new' }, :class => 'small black login button' -%>
+	
+			<div class="divider"></div>
+			<%= link_to "Sign Up", { :controller => 'users', :action => 'new' }, :class => 'small red signup button' -%>
+			        
 
- <div id="header">
+			<!-- Start Credentials form -->
+			<form id="credentials" method="post" action="">
+			    <div class="col">
+			    	<input type="text" id="username" value="Email" name="username" tabindex="1"/>
+			    </div>
+			    <div class="col">
+			    	<input type="password" id="password" name="password" value="Password" tabindex="2" maxlength="16"/>
+			    	<a href="" class="retrieve_password hide" tabindex="4">Forgot your password?</a>
+			    </div>
+			</form> <!-- End Credentials form -->
+			<div class="form_box hide"></div> <!-- Form background -->
+		</div> <!-- End user auth -->
+	</div>
+
+ <!-- <div id="header">
+
 				<%= link_to 'Home', users_path %> | 
         <% if current_user %>
         <%= link_to "Edit Profile", edit_user_path(current_user.id)%>
@@ -18,12 +42,29 @@
         <%= link_to "Register", new_user_path%> | 
         <%= link_to "Login", :login %>
         <% end %>
-    </div>
+    </div> -->
 
 <%= yield %>
 
-	<div id="footer">
-			<p>© Sync 2012</p>
+<div id="footer" class="page"> <!-- Start Footer -->
+
+	<div class="top">
+		<img src="images/logo_footer.jpg" alt="" />
+		
+		<ul>
+			<li class="twitter"><a href="https://twitter.com/#!/synclives">Twitter</a></li>
+			<li class="facebook"><a href="http://www.facebook.com/synclives">Facebook</a></li>
+			<li class="rss"><a href="http://twitter.com/statuses/user_timeline/479079530.rss">RSS</a></li>
+		</ul>
+		<div class="clear"></div>
 	</div>
+	
+	<div class="bottom">
+		<a href=""><img src="images/app_store_small.gif" alt="" /></a>
+		<p>Copyright &copy; 2012 SyncOurLives.com. All Rights Reserved.</p>
+		<div class="clear"></div>
+	</div>
+	
+</div> <!-- End Footer -->
 </body>
 </html>
