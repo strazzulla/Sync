@@ -16,7 +16,31 @@
 <body>
 
 	
-	<div id="top_bar"></div>
+	<div id="top_bar">
+	
+		<!-- Login/Sign up -->
+		<div id="user_auth">
+			<a class="small black login button" href="" tabindex="5">
+				<span class="login">Log in</span>
+			</a>
+			<div class="divider"></div>
+			<a class="small red signup button" href="signup.html" tabindex="6">
+				<span class="sign_up">Sign up</span>
+			</a>
+			<!-- Start Credentials form -->
+			<form id="credentials" method="post" action="">
+			    <div class="col">
+			    	<input type="text" id="username" value="Email" name="username" tabindex="1"/>
+			    </div>
+			    <div class="col">
+			    	<input type="password" id="password" name="password" value="Password" tabindex="2" maxlength="16"/>
+			    	<a href="" class="retrieve_password hide" tabindex="4">Forgot your password?</a>
+			    </div>
+			</form> <!-- End Credentials form -->
+			<div class="form_box hide"></div> <!-- Form background -->
+		</div> <!-- End user auth -->
+	
+	</div>
 		
 	<div id="top_content_wrap"> <!-- Start App Description -->
 		<div id="top_content" class="page">
