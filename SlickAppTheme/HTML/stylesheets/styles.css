@@ -102,8 +102,6 @@ a.button {
 	text-align: center
 }
 
-
-
 .red.button {
 	background: -moz-linear-gradient(center bottom, #F02C14 22%, #F01 81%);
 	background: -webkit-gradient(linear,left bottom, left top, color-stop(0.22, #F02C14), color-stop(0.81, #F01));
@@ -203,6 +201,19 @@ a.button {
 #user_auth .retrieve_password	{
 	margin-left: 8px;
 	font-size: 10px
+}
+
+/*--------------------------------------------
+Logo
+--------------------------------------------*/
+a#logo-link {
+	padding: 0;
+	float: left;
+	display: block;
+	width: 400px;
+	height: 135px;
+	background: url('../images/logo.jpg') no-repeat top;
+	margin-bottom: 15px;
 }
 
 /*--------------------------------------------
