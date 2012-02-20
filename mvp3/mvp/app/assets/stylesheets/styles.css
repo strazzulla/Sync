@@ -212,8 +212,7 @@ a#logo-link {
 	display: block;
 	width: 400px;
 	height: 135px;
-  background:url('../images/logo.jpg') no-repeat top;
-/*  background:url('../images/page_bg.jpg') #e7e7e7;*/
+  background:url('/images/logo.jpg') no-repeat top;
   
 	margin-bottom: 15px;
 }

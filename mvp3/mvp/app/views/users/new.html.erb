@@ -1,5 +1,8 @@
-<h1>Sign up</h1>
-<br/>
+<div id="top_content_signup" >
+	<div id="logo_top">
+		<%= link_to "", { :controller => 'users', :action => 'index' }, :id => 'logo-link' -%>
+	</div>		
+</div>
+ <div class="clear"></div>
 <%= render 'form' %>
 
-<%= link_to 'Back', users_path %>
