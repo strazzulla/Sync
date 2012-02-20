@@ -22,7 +22,7 @@
 	
 	<div id="nav"> <!-- Start Page Navigation -->
 		<ul class="tabs page">
-			<li><a href="#share">Share</a></li>
+			<li><a href="#share">Sync</a></li>
 			<li><a href="#follow">Follow</a></li>
 			<li><a href="#profile">Profile</a></li>
 			<li><a href="#screenshots">Coming soon</a></li>
@@ -35,38 +35,45 @@
 	<div id="bottom_content" class="page panes">
 		
 		 <div id="share" class="pane"> <!-- Start Contact Page -->
+			
+			<h2> Share the moment </h2>
+			<p>  Whatever you're doing, sharing the moment will help you stay in sync with your partner <p>
+			<br>
+			<br>
 			<div id="contact_form">
 				<div class="left">
 					<form action="javascript:;" method="post"> <!-- Start Contact Form -->
 						<p>
-							<label>Name</label>
+							<label>Location</label> 
+							<br> 
+								<h3>  Where are you now? </h3>
+							<br>
 							<input type="text" id="name" name="name" class="text_input" />
 						</p>
 						<p>
-							<label>Email</label>
+							<label>Activity</label> 
+							<br> 
+								<h3>  What are you doing? </h3>
+							<br>
 							<input type="text" id="email" name="email" class="text_input" />
 						</p>
 						<p>
-							<label>Subject</label>
-							<select id="topic" name="topic" class="text_input">
-								<option value="General Support">General Support</option>
-								<option value="Bug Report">Bug Report</option>
-							</select>
+							<label>Mood</label> 
+							<br> 
+								<h3>  How are you feeling? </h3>
+							<br>
+							<input type="text" id="email" name="email" class="text_input" />
+							
+							<!-- <select id="topic" name="topic" class="text_input">
+															<option value="excited">Excited!</option>
+															<option value="amused">Amused</option>
+														</select> -->
 						</p>
-						<p>
-							<label style="height: 105px">Message</label>
-							<textarea id="message" name="message" class="text_input" rows="" cols=""></textarea>
-						</p>
-						<p class="validation">All Fields Are Required</p>
-						<input type="image" src="images/send.gif" class="send" id="send" />
+						
+						<input type="submit" value="Sync" class="send" id="send" />
 					</form> <!-- End Contact Form -->
 				</div>
 				
-				<div class="right">
-					<b>Get In Touch</b>
-					<p>Please reach out to us, we would love to hear about your inputs, pain points and experiences.</p>
-					<a href="" class="email">founders@syncourlives.com</a> <!-- Add your email here -->
-				</div>
 				
 				<div class="clear"></div>
 			</div>
@@ -76,84 +83,53 @@
 			
 			<div id="features"> <!-- Start Features -->
 				<div class="feature">
-					<div class="new"></div>
 					<div class="content">
 						<div class="screenshot">
-							<img src="images/feature_1.jpg" alt="" />
+							<img src="images/profile_placeholder.png" alt="" />
 							<a href="images/feature_1.jpg" class="screenshots" rel="group">Enlarge</a>
 						</div>
-						<p>Share your location whenever you wish with a single click! See where your love is!</p>
+						<p>Sweetest thing</p>
 					</div>				
 					<div class="bottom"></div>
 				</div>
-				<div class="feature">
+				<div class="features">
 					<div class="content">
 						<div class="screenshot">
-							<img src="images/feature_2.jpg" alt="" />
-							<a href="images/feature_2.jpg" class="screenshots" rel="group">Enlarge</a>
+							<img src="images/sunny.png" alt="" />
+							<p>It's mostly sunny in Palo Alto. Temperature is 64 degrees F</p>
 						</div>
-						<p>Status buttons let you be considerate! Let her know when you are away and busy!</p>
+						
 					</div>				
 					<div class="bottom"></div>
+					<h2> Local Time: </h2> <h3> 11:54 AM </h3>
 				</div>
-				<div class="feature last">
-					<div class="content">
-						<div class="screenshot">
-							<img src="images/feature_3.jpg" alt="" />
-							<a href="images/feature_3.jpg" class="screenshots" rel="group">Enlarge</a>
-						</div>
-						<p>Couples need their special emoticons! A special app for him and her to share them: smooches and winks by Sync.</p>
-					</div>				
-					<div class="bottom"></div>
-				</div>
+				
 				<div class="clear"></div>
 			</div> <!-- End Features -->
 		
 			<div id="reviews_faqs">
 			
-				<div id="reviews"> <!-- Start Reviews -->
-					<div class="review">
-						<p>Can't wait for the iPhone version. This is awesome even on the web!</p>
-						<span>- Esther</span>
-					</div>
-					<div class="review">
-						<p>I love how easy it is to use. No more struggling with texting in a meeting.</p>
-						<span>- Billie </span>
-					</div>
-					<div class="review">
-						<p>Now I always know when Aaron's busy.. no more waiting for replies to my messages.</p>
-						<span>- Katie </span>
-					</div>
-					<div class="review">
-						<p>Finally.. there is an app for that!</p>
-						<span>- Sharon</span>
-					</div>
-					<!-- Add more reviews here -->
-				</div> <!-- End Reviews -->
 			
 				<div id="faqs"> <!-- Start FAQs -->
 					<div class="left_column">
 						<div class="faq">
-							<b>Who is this for?</b>
-							<p>Sync is for couples. Particularly those who are in long distance relationships and need an easy way to share their busy lives with each other.</p>
+							<b>Where are they?</b>
+							<p>"Home sweet home"</p>
 						</div>
 					
 						<div class="faq">
-							<b>Is my data safe?</b>
-							<p>Unlike social networks, we respect your privacy and right to own your pictures and conversations. We claim no rights to any of them.</p>
+							<b>What are they doing?</b>
+							<p>"Cooking with the TV on"</p>
 						</div>
 					</div>
 				
-					<div class="right_column">
+					<div class="right">
 						<div class="faq">
-							<b>What if I need more features?</b>
-							<p>We are working on it! Meanwhile, tell us what you would like.</p>
+							<b>How are they feeling?</b>
+							<p>"Excited about my dance performance tonight"</p>
 						</div>
 					
-						<div class="faq">
-							<b>When's the iPhone app coming?</b>
-							<p>Soon. Meanwhile, we would love to have your feedback on our web app!</p>
-						</div>
+						
 					</div>
 					<div class="clear"></div>
 				</div> <!-- End FAQs -->
