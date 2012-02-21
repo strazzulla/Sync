@@ -557,19 +557,14 @@ div#contact_form .left {
 	background: url('../images/vertical_seperator.gif') repeat-y top right;
 }
 
-/*div#contact_form .text_field {
-	float: left;
-	width: 540px; 
-	height: 30px; 
-}
-*/
 div#contact_form .text_input input {
 	background: #fff url('../images/text_field.gif') repeat-x top;
 	border: 1px solid #c0c0c0;
-	padding: 8px 8px 7px 8px;
+	padding: 4px 4px 4px 4px;
 	font-size: 11px;
 	color: #666;
 	margin-left: -2px;
+	margin-top: -15px;
 	margin-bottom: 23px;
 	width: 258px; 
 	height: 30px; 
@@ -578,6 +573,7 @@ div#contact_form .text_input input {
 	border-bottom-right-radius: 4px; 
 	border-bottom-left-radius: 4px; 
 }
+
 div#contact_form .text_input label {
 	background: #ddd;
 	display: block;
@@ -593,6 +589,14 @@ div#contact_form .text_input label {
 	border-top-left-radius: 4px; 
 }
 
+div#contact_form .text_input select { 
+	padding: 6px 6px 4px 6px; 
+	width: 65px; 
+	height: 31px; 
+	margin-top: -15px;
+	margin-bottom: 23px;
+	text-align: center;
+}
 
 div#contact_form #message { 
 	width: 400px; 
@@ -609,10 +613,50 @@ div#contact_form p.validation {
 	float: left;
 }
 
-div#contact_form .actions submit {
+div#contact_form .actions input {
 	float: left;
 	margin-left: 275px;
-	background: url('../images/send.gif') no-repeat left;
+	
+	padding: 7px 10px 8px 10px;
+	font-size: 12px;
+	
+	display: inline-block;
+	font-family: "HelveticaNeue-Bold", "HelveticaNeue", Helvetica, Arial, Sans-serif;
+	font-weight: bold;
+	color: white;
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	text-decoration: none;
+	white-space: nowrap;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	
+	right: 110px;
+	width: 70px;
+	background-color: #585858;
+
+	background: -moz-linear-gradient(center bottom, #585858 22%, gray 81%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.22, #585858), color-stop(0.81, gray));
+	background-color: gray;
+	background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.22, #585858), color-stop(0.81, gray));
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background: -moz-linear-gradient(center bottom, #585858 22%, gray 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#808080, endColorStr=#585858);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#808080, endColorstr=#585858)";
+	text-shadow: 0px -1px #585858;
+
 }
 
 div#contact_form .right {
