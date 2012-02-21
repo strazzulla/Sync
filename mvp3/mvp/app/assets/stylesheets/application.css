@@ -544,87 +544,104 @@ div#release_notes { }
 			line-height: 22px;
 		}
 	div#release_notes div.last { margin: 0; padding: 0; border: none; }
+	
+	
 /*--------------------------------------------
 Contact
 ---------------------------------------------*/
-div#contact_form {}
-	div#contact_form div.left {
-		float: left;
-		width: 540px;
-		padding-right: 40px;
-		background: url('../images/vertical_seperator.gif') repeat-y top right;
-	}
-		div#contact_form form { }
-			div#contact_form div.text_fields {
-				float: left;
-			}
-			div#contact_form form p {
-				clear:both;
-				margin-bottom: 23px;
-			}
-				div#contact_form p label {
-					background: #ddd;
-					display: block;
-					padding: 8px 0px 8px 10px;
-					width: 70px;
-					text-align: left;
-					font-size: 11px;
-					font-weight: bold;
-					color: #363636;
-					text-transform: uppercase;
-					float: left;
-				}
-				div#contact_form .text_input {
-					background: #fff url('../images/text_field.gif') repeat-x top;
-					border: 1px solid #c0c0c0;
-					padding: 8px 8px 7px 8px;
-					font-size: 11px;
-					color: #666;
-					margin-left: -2px;
-					width: 240px;
-				}
-				div#contact_form select.text_input { padding: 6px 6px 4px 6px; width: 257px; height: 31px; }
-						div#contact_form #message { 
-							width: 400px; 
-							height: 105px; 
-							font-size: 12px;
-							color: #666;
-						}
-				div#contact_form p.validation {
-					font-size: 11px;
-					text-transform: uppercase;
-					padding-top: 4px;
-					margin: 0;
-					float: left;
-				}
-				div#contact_form .send {
-					float: left;
-					margin-left: 275px;
-				}
-	div#contact_form div.right {
-		width: 275px;
-		float: right;
-	}
-		div#contact_form div.right b{
-			font-weight: bold;
-			color: #252525;
-			display: block;
-			margin-bottom: 10px;
-		}
-		div#contact_form div.right p { 
-			font-size: 13px; 
-			line-height: 22px; 
-			letter-spacing: -0.02em; 
-			margin-bottom: 10px;
-		}
-		div#contact_form div.right a.email {
-			display: block;
-			padding-left: 28px;
-			background: url('../images/mail_icon.gif') no-repeat left;
-			color: #50aeae;
-			text-decoration: none;
-		}
-			div#contact_form div.right a.email:hover { color: #333; }		
+
+div#contact_form .left {
+	float: left;
+	width: 580px;
+	padding-right: 40px;
+	background: url('../images/vertical_seperator.gif') repeat-y top right;
+}
+
+/*div#contact_form .text_field {
+	float: left;
+	width: 540px; 
+	height: 30px; 
+}
+*/
+div#contact_form .text_input input {
+	background: #fff url('../images/text_field.gif') repeat-x top;
+	border: 1px solid #c0c0c0;
+	padding: 8px 8px 7px 8px;
+	font-size: 11px;
+	color: #666;
+	margin-left: -2px;
+	margin-bottom: 23px;
+	width: 258px; 
+	height: 30px; 
+	border-top-left-radius: 4px; 
+	border-top-right-radius: 4px; 
+	border-bottom-right-radius: 4px; 
+	border-bottom-left-radius: 4px; 
+}
+div#contact_form .text_input label {
+	background: #ddd;
+	display: block;
+	padding: 8px 0px 8px 10px;
+	width: 100px;
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+	color: #363636;
+	text-transform: uppercase;
+	float: left;
+	border-bottom-left-radius: 4px; 
+	border-top-left-radius: 4px; 
+}
+
+
+div#contact_form #message { 
+	width: 400px; 
+	height: 105px; 
+	font-size: 12px;
+	color: #666;
+}
+
+div#contact_form p.validation {
+	font-size: 11px;
+	text-transform: uppercase;
+	padding-top: 4px;
+	margin: 0;
+	float: left;
+}
+
+div#contact_form .actions submit {
+	float: left;
+	margin-left: 275px;
+	background: url('../images/send.gif') no-repeat left;
+}
+
+div#contact_form .right {
+	width: 275px;
+	float: right;
+}
+div#contact_form .right b{
+	font-weight: bold;
+	color: #252525;
+	display: block;
+	margin-bottom: 10px;
+}
+
+div#contact_form .right p { 
+	font-size: 13px; 
+	line-height: 22px; 
+	letter-spacing: -0.02em; 
+	margin-bottom: 10px;
+}
+
+div#contact_form .right a.email {
+	display: block;
+	padding-left: 28px;
+	background: url('../images/mail_icon.gif') no-repeat left;
+	color: #50aeae;
+	text-decoration: none;
+}
+
+div#contact_form .right a.email:hover { color: #333; }		
 /*--------------------------------------------
 Footer
 ---------------------------------------------*/
@@ -645,19 +662,19 @@ div#footer {
 				float: left;
 				padding: 8px 15px 8px 15px;
 			}
-				div#footer div.top ul li a {
-					width: 22px;
-					height: 22px;
-					background: url('../images/social_icons.gif') no-repeat;
-					text-indent: -99999px;
-					display: block;
-				}
-					div#footer div.top ul li.twitter a { background-position: 0px 0px; }
-						div#footer div.top ul li.twitter a:hover { background-position: 0px -22px; }
-					div#footer div.top ul li.facebook a { background-position: -22px 0px; }
-						div#footer div.top ul li.facebook a:hover { background-position: -22px -22px; }
-					div#footer div.top ul li.rss a { background-position: -44px 0px; }
-						div#footer div.top ul li.rss a:hover {  background-position: -44px -22px; }
+			div#footer div.top ul li a {
+				width: 22px;
+				height: 22px;
+				background: url('../images/social_icons.gif') no-repeat;
+				text-indent: -99999px;
+				display: block;
+			}
+			div#footer div.top ul li.twitter a { background-position: 0px 0px; }
+			div#footer div.top ul li.twitter a:hover { background-position: 0px -22px; }
+			div#footer div.top ul li.facebook a { background-position: -22px 0px; }
+			div#footer div.top ul li.facebook a:hover { background-position: -22px -22px; }
+			div#footer div.top ul li.rss a { background-position: -44px 0px; }
+			div#footer div.top ul li.rss a:hover {  background-position: -44px -22px; }
 	div#footer div.bottom {
 		padding-top: 10px;
 	}
