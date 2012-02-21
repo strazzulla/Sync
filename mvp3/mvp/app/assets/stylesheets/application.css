@@ -557,7 +557,7 @@ div#contact_form .left {
 	background: url('../images/vertical_seperator.gif') repeat-y top right;
 }
 
-div#contact_form .text_input input {
+div#contact_form .text_input input, div#signin_form .field input {
 	background: #fff url('../images/text_field.gif') repeat-x top;
 	border: 1px solid #c0c0c0;
 	padding: 4px 4px 4px 4px;
@@ -574,7 +574,7 @@ div#contact_form .text_input input {
 	border-bottom-left-radius: 4px; 
 }
 
-div#contact_form .text_input label {
+div#contact_form .text_input label, div#signin_form .field label {
 	background: #ddd;
 	display: block;
 	padding: 8px 0px 8px 10px;
@@ -613,7 +613,7 @@ div#contact_form p.validation {
 	float: left;
 }
 
-div#contact_form .actions input {
+div#contact_form .actions input, div#signin_form .actions input {
 	float: left;
 	margin-left: 275px;
 	
