@@ -261,7 +261,7 @@ div#top_content {
 		div#top_content div#app_screenshot div.price_badge{
 			width: 115px;
 			height: 115px;
-			background: url('../images/price_badge.png') no-repeat top;
+			/*background: url('../images/price_badge.png') no-repeat top; */
 			float: right;
 			margin-top: -40px;
 			padding-right: 40px;
