@@ -9,7 +9,7 @@
 <body>
 
 
-	
+	<div id="header">
 		<!-- Login/Sign up -->
 		<div id="user_auth">
 			<%= link_to "Login", { :controller => 'user_sessions', :action => 'new' }, :class => 'small black login button' -%>
@@ -43,6 +43,7 @@
         <%= link_to "Login", :login %>
         <% end %>
     </div> -->
+</div> <!-- Header End -->
 
 <%= yield %>
 
