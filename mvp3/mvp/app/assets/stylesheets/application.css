@@ -41,6 +41,12 @@ div#top_bar {
 	font-size: 12px;
 }
 
+.large.button {
+	padding: 7px 10px 8px 10px;
+	margin-left: 10px;
+	font-size: 16px;
+}
+
 a.button {
 	display: inline-block;
 	font-family: "HelveticaNeue-Bold", "HelveticaNeue", Helvetica, Arial, Sans-serif;
