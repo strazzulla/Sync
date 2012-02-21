@@ -595,7 +595,7 @@ div#contact_form .text_input select {
 	height: 31px; 
 	margin-top: -15px;
 	margin-bottom: 23px;
-	text-align: center;
+	text-align: center; 
 }
 
 div#contact_form #message { 
