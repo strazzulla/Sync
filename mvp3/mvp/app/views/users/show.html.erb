@@ -1,55 +1,44 @@
+<div id="top_content_signup" >
+	<div id="logo_top">
+		<%= link_to "", { :controller => 'users', :action => 'index' }, :id => 'logo-link' -%>
+	</div>		
+</div>
+<div class="clear"></div>
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
+<div id="bottom_content" class="page panes">
+	<div id="Title" class="Signup">
+		<p> About your partner</p> 
+	</div>
+	<br>
+	<br>
+	<br>
+	<div id="left">
+		
+		<!-- After login, display partner's data -->
+		<% if current_user%>
+			<br>
+				<% @users.each do |u| %>
+					<% if u.email == current_user.partner_email %>
+						
+							<p>
+							  Your Partner: <b> <%= u.name %> <%= u.last_name %></b>
+							</p>
 
-<p>
-  <b>Name:</b>
-  <%= @user.name %>
-</p>
+							<p>
+							  Is currently <b><%= u.activity %></b>
+							</p>
+							
+							<p>
+							  And feeling <b><%= u.mood %> </b>
+							</p>
+					<% end %>
+				<% end %>
+			</p>
+		<%end%>
 
-<p>
-  <b>Last name:</b>
-  <%= @user.last_name %>
-</p>
-
-<p>
-  <b>Birthdate:</b>
-  <%= @user.birthdate %>
-</p>
-
-<p>
-  <b>Partner email:</b>
-  <%= @user.partner_email %>
-</p>
-
-<p>
-  <b>City:</b>
-  <%= @user.city %>
-</p>
-
-<p>
-  <b>Country:</b>
-  <%= @user.country %>
-</p>
-
-<p>
-  <b>Share location:</b>
-  <%= @user.share_location %>
-</p>
-
-<p>
-  <b>Mood:</b>
-  <%= @user.mood %>
-</p>
-
-<p>
-  <b>Activity:</b>
-  <%= @user.activity %>
-</p>
-
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+	<div>
+</div>
+<br>
+<%= link_to 'Edit your profile', edit_user_path(@user) %> 
+<!-- <%= link_to 'Back', users_path %> -->
